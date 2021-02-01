@@ -52,7 +52,7 @@ class AuthServerConfigTest {
                 .param("password",appProperties.getUserPassword())
                 .param("grant_type","password"))
                 .andDo(print())
-                        .andExpect(status().isOk())
+                .andExpect(status().isOk())
                 .andExpect(jsonPath("access_token").exists());
     }
 }

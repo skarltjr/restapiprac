@@ -19,7 +19,7 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
 public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
     /**
      * 1. 인증을 해주는 서버로써 설정을 AuthServerConfig
-     * 2. 리소스에 접근할 때  설정한 oauth서버를 통해 접근해서 토큰을 발급받고
+     * 2. 리소스에 접근할 때  설정한 oauth서버를 통해 접근해서 accessToken - 토큰을 발급받고
      * 3. Resourceserver에서 리소스에 접근할 때 토큰을 발급받았는지 확인한 후 접근에대한 제어를 한다.
      * <p>
      * 따라서
