@@ -53,7 +53,7 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
         clients.inMemory()
                 .withClient(appProperties.getClientId())
                 .authorizedGrantTypes("password", "refresh_token")
-                .scopes("read", "write")
+                .scopes("read", "write")  /**   우리가 리소스서버에 대해 사용하고자하는 기능 */
                 .secret(passwordEncoder.encode(appProperties.getClientSecret()))
                 .accessTokenValiditySeconds(10 * 60)
                 .refreshTokenValiditySeconds(6 * 10 * 60);
