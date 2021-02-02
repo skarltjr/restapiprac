@@ -153,7 +153,7 @@ public class EventControllerTests {
         ;
     }
 
-    private String getBearerToken(boolean needToCreateAccount) throws Exception {
+    private String  getBearerToken(boolean needToCreateAccount) throws Exception {
         return "Bearer " + getAccessToken(needToCreateAccount);
     }
 

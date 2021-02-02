@@ -33,6 +33,9 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
      * - passwordEncoder
      * - clients 클라이언트 설정
      * - endpoints에서 authenticationManager / userDetailsService / tokenStore를 사용하겠다.를 지정
+     *
+     * 주의 - 지금은 작은 서비스이기때문에 인증서버와 리소스서버 분리x
+     * inMemory TokenStore는 인증서버와 리소스서버가 분리되었을 때 토큰공유x -> 필요에따라 jdbc로 바꿔주기
      */
 
 
